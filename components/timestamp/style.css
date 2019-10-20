@@ -1,0 +1,10 @@
+#card-timestamp .timestamp {
+	position: absolute;
+	top: 20px;
+	left: 18px;
+	color: white;
+	text-align: left;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-family: 'MotoyaLCedar';
+}

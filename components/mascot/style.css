@@ -1,0 +1,28 @@
+#card-mascot .quote-bg { position: absolute; left: 207px; top: 392px; }
+
+#card-mascot .quote-text {
+	position: absolute;
+	left: 208px;
+	top: 398px;
+	width: 176px;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'MotoyaLCedar';
+	font-weight: bold;
+}
+
+#card-mascot .mascot-bg { position: absolute; left: 208px; top: 406px; }
+#card-mascot .mascot-img { position: absolute; left: 208px; top: 406px; }
+
+#card-mascot .mascot-name {
+	position: absolute;
+	text-align: right;
+	width: 175px;
+	left: 209px;
+	top: 570px;
+	font-family: 'Work Sans';
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-shadow: -1px -1px 0 #3c2d32, 1px -1px 0 #3c2d32, -1px 1px 0 #3c2d32, 1px 1px 0 #3c2d32;
+}

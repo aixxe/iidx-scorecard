@@ -1,0 +1,11 @@
+/* Positions of the best and current clear types. */
+#card-clear div { position: absolute; top: 225px; }
+
+#card-clear div.best { left: 119px; }
+#card-clear div.current { left: 202px; }
+
+/* Limit image width for a better fit. */
+#card-clear div > img { width: 84px; }
+
+/* Set position of the improvement arrow. */
+#card-clear img.diff { left: 272px; top: 216px; }

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    line-height: 1;
+}
+
+@font-face {
+    font-family: 'MotoyaLCedar';
+    src: url('../fonts/Kosugi-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../fonts/WorkSans-Regular.ttf') format('truetype');
+}

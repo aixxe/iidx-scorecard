@@ -1,0 +1,30 @@
+.card-score {
+    position: absolute;
+}
+
+.card-score .frame {
+    position: relative;
+    left: -12px;
+    z-index: 1;
+}
+
+.card-score .up,
+.card-score .down {
+    position: absolute;
+    z-index: 2;
+}
+
+.card-score .blank {
+    position: relative;
+    top: -4px;
+}
+
+.card-score img.fade {
+    opacity: 0.5;
+}
+
+.card-score > img.fade,
+.card-score > img.regular {
+    float: left;
+    margin-left: 0;
+}

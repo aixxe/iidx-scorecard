@@ -1,0 +1,27 @@
+#card-pacemaker .type {
+    position: absolute;
+}
+
+#card-pacemaker .type {
+	left: 21px;
+	top: 364px;
+	height: 16px;
+}
+
+#card-pacemaker .type img { max-height: 100%; float: left; }
+
+#card-pacemaker .type img:not(:first-child) { margin-left: -6px; }
+
+#card-pacemaker .type span.percentage {
+	margin-left: 17px;
+	display: inline-block;
+	height: inherit;
+}
+
+#card-pacemaker .target { left: 212px; top: 366px; }
+
+#card-pacemaker .delta { left: 299px; top: 366px; }
+
+#card-pacemaker img.card-arrow { left: 272px; top: 355px; }
+
+#card-pacemaker .frame { top: -5px; }

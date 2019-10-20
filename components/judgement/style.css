@@ -1,0 +1,13 @@
+/* Absolute positions for each judgement value. */
+#card-judgement * { left: 129px; }
+
+#card-judgement .pgreat { top: 399px; }
+#card-judgement .great { top: 422px; }
+#card-judgement .good { top: 445px; }
+#card-judgement .bad { top: 468px; }
+#card-judgement .poor { top: 492px; }
+
+#card-judgement .combo-break { top: 517px; }
+
+#card-judgement .fast { top: 541px; }
+#card-judgement .slow { top: 564px; }

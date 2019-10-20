@@ -1,0 +1,11 @@
+/* Positions of the best and current clear types. */
+#card-djlevel div { position: absolute; top: 252px; }
+
+#card-djlevel div.best { left: 122px; }
+#card-djlevel div.current { left: 205px; }
+
+/* Limit image width for a better fit. */
+#card-djlevel div > img { width: 80px; }
+
+/* Set position of the improvement arrow. */
+#card-djlevel img.diff { left: 272px; top: 244px; }

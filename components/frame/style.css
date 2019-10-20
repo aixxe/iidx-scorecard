@@ -1,0 +1,2 @@
+/* Align to the top-left of the page. */
+#card-frame { position: absolute; left: 0; top: 0; }
