@@ -1,6 +1,6 @@
 # iidx-scorecard
 
-Vue.js scorecard replica for use with [ameto](https://github.com/aixxe).
+Vue.js scorecard replica for use with [ameto](https://github.com/aixxe/ameto).
 
 ## Examples
 
