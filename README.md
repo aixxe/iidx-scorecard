@@ -4,8 +4,8 @@ Vue.js scorecard replica for use with [ameto](https://github.com/aixxe/ameto).
 
 ## Examples
 
-![imgui demo in Counter-Strike: Global Offensive on Linux](https://i.imgur.com/qCDSBof.png)
-![imgui demo in Counter-Strike: Source on Linux](https://i.imgur.com/vi32XGx.png)
+![Example image 1](https://i.imgur.com/qCDSBof.png)
+![Example image 2](https://i.imgur.com/vi32XGx.png)
 
 
 ## Usage
@@ -42,6 +42,6 @@ The following fonts are used in the Photoshop document.
 - https://fonts.google.com/specimen/Kosugi+Maru
 - https://fonts.google.com/specimen/Work+Sans
 - https://fonts.google.com/specimen/Orbitron
-- https://fonts.google.com/specimen/Exo
+- https://fonts.google.com/specimen/Exo+2
 
 Background image by [starline](https://www.freepik.com/free-photo/abstract-smooth-blue-light-streak-wave-background_5083076.htm) at Freepik.com.
