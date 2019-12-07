@@ -62,7 +62,7 @@ Vue.component('card-pacemaker', {
         /* Set arrow and determine text color for the differential frame. */
         pacemaker_data.raise = arrow_type;
         pacemaker_data.delta_type = (arrow_type === 'default') ? 'up': arrow_type;
-        
+
         return pacemaker_data;
     },
     template: `<div id="card-pacemaker">
@@ -73,9 +73,14 @@ Vue.component('card-pacemaker', {
             </span>
         </div>
 
-        <card-score class="target" :value="target"></card-score>
-        <card-score v-if="target !== -1" class="delta"
-            :type="delta_type" :value="delta"></card-score>
-        <card-arrow v-if="target !== -1" :type="raise" />
+        <template v-if="target === -1">
+            <card-score class="target" :value="target" unsigned></card-score>
+        </template>
+        
+        <template v-if="target !== -1">
+            <card-score class="target" :value="target"></card-score>
+            <card-score class="delta" :type="delta_type" :value="delta"></card-score>
+            <card-arrow :type="raise" />
+        </template>
     </div>`
 });
