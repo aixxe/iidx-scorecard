@@ -7,7 +7,6 @@ Vue.js scorecard replica for use with [ameto](https://github.com/aixxe/ameto).
 ![Example image 1](https://i.imgur.com/qCDSBof.png)
 ![Example image 2](https://i.imgur.com/vi32XGx.png)
 
-
 ## Usage
 
 [Download](https://github.com/aixxe/iidx-scorecard/archive/master.zip) and extract `iidx-scorecard-master` to the `ameto/plugins/scorecard/assets` directory.
