@@ -6,7 +6,7 @@ Vue.component('card-background', {
         let img_bg = 'bg_clear.png';
 
         /* Switch to the "failed" variant if applicable. */
-        if (score.dead || score.clearType === 'CLEAR_FAILED')
+        if (score.clear.current === 'clear_failed')
             img_bg = 'bg_fail.png';
 
         return {image: img_base + img_bg};

@@ -3,8 +3,18 @@ Vue.component('card-chart', {
         const img_base = `./components/chart/images/`;
 
         /* Strip off prefixes from enums to match the image filenames. */
-        const style = score.chart.playStyle.replace('STYLE_', '').toLowerCase();
-        const difficulty = score.chart.difficulty.replace('DIFFICULTY_', '').toLowerCase();
+        let style, difficulty;
+
+        switch (score.chart.play_style) {
+            case 0: style = 'sp'; break;
+            case 1: style = 'dp'; break;
+        }
+
+        switch (score.chart.difficulty) {
+            case 0: difficulty = 'normal'; break;
+            case 1: difficulty = 'hyper'; break;
+            case 2: difficulty = 'another'; break;
+        }
 
         /* Emulate game behavior by defaulting to 12 when rating is abnormal. */
         let rating = score.chart.rating;
@@ -21,6 +31,6 @@ Vue.component('card-chart', {
     template: `<div id="card-chart">
         <img class="playstyle" :src="style">
         <img class="difficulty" :src="difficulty">
-        <img class="rating" :src="rating" v-if="score.config.showChartRating">
+        <img class="rating" :src="rating">
     </div>`
 });

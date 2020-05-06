@@ -2,7 +2,7 @@ Vue.component('card-avatar', {
     data: () => {
         return {
             avatar: './components/avatar/images/avatar.png',
-            name: score.player.djName
+            name: score.player.name
         };
     },
     template: `<div id="card-avatar">

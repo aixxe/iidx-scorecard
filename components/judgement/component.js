@@ -7,7 +7,7 @@ Vue.component('card-judgement', {
         <card-score class="bad" :value="judgement.bad"></card-score> 
         <card-score class="poor" :value="judgement.poor"></card-score> 
         
-        <card-score class="combo-break" :value="judgement.comboBreak"></card-score>
+        <card-score class="combo-break" :value="judgement.combo_break"></card-score>
          
         <card-score class="fast" :value="judgement.fast"></card-score> 
         <card-score class="slow" :value="judgement.slow"></card-score> 

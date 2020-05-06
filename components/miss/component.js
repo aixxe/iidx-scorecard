@@ -1,7 +1,7 @@
 Vue.component('card-miss', {
     data: () => {
-        const best_miss = (score.bestMissCount !== -1 ? score.bestMissCount: -1);
-        const current_miss = (score.missCount !== -1 ? score.missCount: -1);
+        const best_miss = (score.miss_count.best !== -1 ? score.miss_count.best: -1);
+        const current_miss = (score.miss_count.current !== -1 ? score.miss_count.current: -1);
 
         /* Determine whether this was an improvement. */
         let raise_type = 'default';

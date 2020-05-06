@@ -2,13 +2,13 @@ Vue.component('card-clear', {
     data: () => {
         /* Define clear types from best to worst. */
         const clear_types = [
-            'CLEAR_FULL_COMBO', 'CLEAR_EX_HARD', 'CLEAR_HARD', 'CLEAR_NORMAL',
-            'CLEAR_EASY', 'CLEAR_ASSIST', 'CLEAR_FAILED', 'CLEAR_NO_PLAY'
+            'clear_fullcombo', 'clear_ex', 'clear_hard', 'clear_clear',
+            'clear_easy', 'clear_assist', 'clear_failed', 'clear_noplay'
         ];
 
         /* Map clear types from score data to image. */
-        const best_clear = (score.bestClearType || "CLEAR_NO_PLAY");
-        const current_clear = score.clearType;
+        const best_clear = score.clear.best;
+        const current_clear = score.clear.current;
 
         /* Determine whether this was an improvement. */
         const best_index = clear_types.indexOf(best_clear);

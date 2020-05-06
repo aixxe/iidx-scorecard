@@ -3,8 +3,8 @@ Vue.component('card-exscore', {
         /* Determine whether this was an improvement. */
         let raise_type = 'default';
 
-        const best_score = score.bestExScore || 0;
-        const current_score = score.exScore;
+        const best_score = score.ex_score.best || 0;
+        const current_score = score.ex_score.current;
 
         if (current_score > best_score)
             raise_type = 'up';

@@ -13,30 +13,16 @@ Vue.component('card-pacemaker', {
         if (score.pacemaker === undefined || score.pacemaker.type === 'PACEMAKER_NONE')
             return pacemaker_data;
 
-        /* When enabled, if the current percentage exceeds 94.45%, the pacemaker
-           will always display 100% instead, aka. "MAX-". (thanks Lain!) */
-        let auto_max_pacemaker = (score.config.autoMaxPacemaker === true);
-
-        if (auto_max_pacemaker) {
-            let percentage_value = ((score.exScore / (score.chart.notes * 2)) * 100);
-
-            if (percentage_value > 94.45) {
-                score.pacemaker.type = 'PACEMAKER_PERCENTAGE';
-                score.pacemaker.score = score.chart.notes * 2;
-                score.pacemaker.target = 100;
-            }
-        }
-
         /* Set the type, target and delta between current score and target. */
         pacemaker_data.type = img_base + score.pacemaker.type.toLowerCase() + '.png';
         pacemaker_data.target = score.pacemaker.score;
-        pacemaker_data.delta = score.exScore - pacemaker_data.target;
+        pacemaker_data.delta = score.ex_score.current - pacemaker_data.target;
 
         /* Handle pacemaker target text. This can include rival names but only
            custom percentages are displayed to replicate original behaviour. */
-        if (score.pacemaker.type === 'PACEMAKER_PERCENTAGE') {
+        if (score.pacemaker.type === 'sg_pacemaker') {
             /* Parse target as integer, push each digit as an image link. */
-            let target = parseInt(score.pacemaker.target);
+            let target = parseInt(score.pacemaker.name);
 
             if (!isNaN(+target)) {
                 let digits = target.toString().split('');
