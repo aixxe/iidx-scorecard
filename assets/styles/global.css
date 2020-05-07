@@ -3,6 +3,10 @@
     -webkit-font-smoothing: antialiased;
 }
 
+html {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     line-height: 1;
